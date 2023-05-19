@@ -1,0 +1,29 @@
+﻿<Window x:Class="Prak1Denis.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Prak1Denis"
+        mc:Ignorable="d"
+        Title="MainWindow" Background="Aqua" Height="480" Width="500">
+    <Grid>
+
+        <StackPanel>
+            <Label Content="Задание 1" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20"/>
+            <Label FontSize="15" Content="Введите первое число:"/>
+            <TextBox x:Name="textBoxA" FontSize="15" Height="35" Width="185" TextWrapping="Wrap" HorizontalAlignment="Left"/>
+            <Label FontSize="15" Content="Введите второе число:"/>
+            <TextBox x:Name="textBoxB" FontSize="15" Height="35" Width="185" TextWrapping="Wrap" HorizontalAlignment="Left"/>
+            <Button Content="Вычислить" FontSize="15" Click="Button_Click"  Background="Red" Margin="0,0,230,0"/>
+            <Label FontSize="18" Content="Сумма квадратов:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="166"/>
+            <TextBox x:Name="sumTextBox" Height="23" Width="185" IsReadOnly="True"/>
+            <Label FontSize="18" Content="Разность квадратов:" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <TextBox x:Name="differenceTextBox" Height="23" Width="185" IsReadOnly="True" TextChanged="differenceTextBox_TextChanged"/>
+            <Label FontSize="18" Content="Произведение квадратов:" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <TextBox x:Name="productTextBox" Height="23" Width="185" IsReadOnly="True"/>
+            <Label FontSize="18" Content="Частное квадратов:" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <TextBox x:Name="quotientTextBox" Height="23" Width="185" IsReadOnly="True"/>
+        </StackPanel>
+
+    </Grid>
+</Window>
